@@ -1,0 +1,22 @@
+<project default="compile" >
+    <target name="compile" depends="generatedoc">
+        <mkdir dir="bin"/>
+        <javac srcdir="src" destdir="bin"/>
+    </target>
+    <target name="generatedoc">
+        <javadoc packagenames="com.*"
+         sourcepath="src"
+         defaultexcludes="yes"
+         destdir="docs/api"
+         author="true"
+         version="true"
+         use="true"
+         windowtitle="Test API">
+            <doctitle><![CDATA[<h1>Test</h1>]]></doctitle>
+            <bottom><![CDATA[<i>Copyright &#169; 2000 Dummy Corp. All Rights Reserved.</i>]]></bottom>
+            <tag name="todo" scope="all" description="To do:"/>
+            <link offline="true" href="https://docs.oracle.com/javase/8/docs/api/" packagelistLoc="C:\tmp"/>
+            <link href="https://docs.oracle.com/javase/8/docs/api/"/>
+        </javadoc>
+    </target>
+</project>

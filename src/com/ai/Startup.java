@@ -1,3 +1,5 @@
+package com.ai;
+import com.aienum.*;
 /**
  * written by guru
  */
@@ -7,6 +9,6 @@ public class Startup {
      * @param args
      */
     public static void main(String args[]){
-        System.out.println("Hello World");
+        System.out.println(Dept.IT);
     }
 }
